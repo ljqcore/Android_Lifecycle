@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#669800">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Activity B"
+        android:textColor="#D2E891"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="488dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/BStart_A"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A983D"
+            android:insetLeft="20dp"
+            android:insetRight="10dp"
+            android:letterSpacing="0.03"
+            android:maxLines="1"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/start_A"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/BStart_C"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A973D"
+            android:insetLeft="0dp"
+            android:insetRight="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/start_C"
+            android:textSize="12sp"
+            app:iconPadding="6dp" />
+
+        <Button
+            android:id="@+id/BFinish_B"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A973D"
+            android:insetRight="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/finish_B"
+            android:textSize="12sp"
+            app:iconPadding="4dp" />
+
+        <Button
+            android:id="@+id/BDialog"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:backgroundTint="#7A963D"
+            android:insetRight="20dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="@string/dialog"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Lifecycle_method_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="390dp"
+        android:text="@string/lifecycle_ml"
+
+        android:textColor="#D1E790"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.106" />
+
+    <ScrollView
+        android:id="@+id/methodList"
+        android:layout_width="394dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="269dp"
+        android:background="#FEFEFE"
+        android:scrollbarStyle="outsideInset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mlist_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginBottom="210dp"
+        android:text="@string/activity_status"
+        android:textColor="#D1E790"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/activityStatus"
+        android:layout_width="395dp"
+        android:layout_height="191dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="396dp"
+        android:background="#FDFDFD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
